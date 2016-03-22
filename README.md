@@ -1,2 +1,4 @@
 # NewsPortalH5
-H5 News Portal
+AnyCode新闻阅读器，基于Alibaba-SUI开发！
+
+## About AnyCode
