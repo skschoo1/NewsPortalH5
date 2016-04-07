@@ -333,15 +333,42 @@
     <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='./js/lib/js.cookie.js' charset='utf-8'></script>
+    <script type='text/javascript' src='./js/baseParams.js' charset='utf-8'></script>
     <script type='text/javascript'>
     $(function(){
-      $(".swiper-container").swiper({
-        "speed":400,
-        "spaceBetween":0
-      });
-      $(".link").click(function(){
-        $.toast("Add to List Success");
-      });
+        var baseUrl = "http://alpha.api.shimeifen.com/";
+        var bp = new baseParams("1.0", "dev");
+        console.log(bp.all);
+
+        $.ajax({
+            type: 'GET',
+            url: baseUrl+'api/start',
+            data: bp,
+            dataType: 'json',
+            timeout: 3000,
+            success: function(data) {
+                console.log(data);
+                if (data.status == 200) {
+                    // Success
+                    var token = data.data.token;
+                    Cookies.set("token", token);
+                } else {
+                    console.log("Error");
+                }
+            },
+            error: function(xhr, type) {
+                alert("ajax error");
+            }
+        });
+
+        $(".swiper-container").swiper({
+            "speed":400,
+            "spaceBetween":0
+        });
+        $(".link").click(function(){
+            $.toast("Add to List Success");
+        });
     });
     </script>
 </body>
