@@ -1,0 +1,128 @@
+/** Home **/
+.row {
+    margin-left: 2%;
+}
+.product-cards {
+    margin: 0;
+    padding: 0;
+}
+
+.product-cards .product-card {
+    width: 50%;
+    margin-left: 0;
+}
+
+.product-cards .product-card .product-card-header-pic {
+    margin: .1rem;
+}
+
+.product-detail-name-block {
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+}
+
+.product-detail-name-block .product-name{
+    font-size: 0.65rem;
+}
+
+.button-label {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    border-radius: 0.25rem;
+    line-height: 1.25rem;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: none;
+    padding: 0 0.3rem;
+    margin: 0;
+    height: 1.2rem;
+    white-space: nowrap;
+    position: relative;
+    text-overflow: ellipsis;
+    font-size: 0.6rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.button-label-cyan {
+    border: 1px solid #0BB592;
+    color: #0BB592;
+}
+
+.button-label-gray {
+    border: 1px solid #8b8b8b;
+    color: #8b8b8b;
+}
+
+.product-detail-buy-block {
+    margin: 0.5rem 0 0 0;
+    font-size: 0.6rem;
+    color: #8b8b8b;
+}
+
+.product-detail-buy-block .col-50 {
+    margin-left: 2%;
+}
+
+.product-detail-buy-block .progress-line {
+    height: 0.3rem;
+    background: #e4e4e4;
+}
+
+.product-detail-buy-block .progress-line .progress-line-inner {
+    height: 100%;
+    background: #0BB592;
+}
+
+.product-detail-buy-block .progress-info {
+    color: #c4c4c4;
+    margin-top: .2rem;
+}
+
+.product-detail-buy-block .progress-info .progress-info-total {
+    float: left;
+}
+
+.product-detail-buy-block .progress-info .progress-info-remain {
+    float: right;
+}
+
+.product-detail-buy-block .number {
+    text-align: right;
+    padding-right: 0.5rem;
+    color: #c4c4c4;
+}
+
+.product-detail-luckynumber-block {
+    margin-left: 0;
+    height: 2rem;
+    padding: .5rem;
+    font-size: .7rem;
+    background: #e4e4e4;
+    color: #8b8b8b;
+}
+
+#lucky-number {
+    color: #0bb582;
+    font-size: .6rem;
+}
+
+.product-detail-operation-block {
+    margin: 0;
+}
+
+.product-detail-operation-block .item-link {
+    padding-left: 0rem;
+    font-size: .8rem;
+    font-weight: lighter;
+    color: #8b8b8b;
+}
+
+.product-detail-operation-block .item-title {
+    /***/
+}
+/** ./Home **/

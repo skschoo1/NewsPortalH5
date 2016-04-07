@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Profile - Ten cents</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+</head>
+<body>
+    <div class="page-group">
+        <div class="page">
+            <!-- Navigation bar -->
+            <header class="bar bar-nav" style="background:#0BB592;">
+                <a class="button button-link button-nav pull-left" href="/index.html" data-transition='slide-out'>
+                    <!-- span class="icon icon-left"></span>返回-->
+                    <span class="icon icon-home" style="color:#ffffff;"></span>
+                </a>
+                <h1 class="title" style="color:#fff;">10 Cents</h1>
+            </header>
+            <!-- ./Navigation bar -->
+
+            <!-- Tab bar -->
+            <nav class="bar bar-tab">
+                <a class="tab-item active" href="#">
+                    <span class="icon icon-home"></span>
+                    <span class="tab-label">Home</span>
+                </a>
+                <a class="tab-item" href="#">
+                    <span class="icon icon-share"></span>
+                    <span class="tab-label">Share</span>
+                    <span class="badge">2</span>
+                </a>
+                <a class="tab-item" href="#">
+                    <span class="icon icon-gift"></span>
+                    <span class="tab-label">Dream List</span>
+                </a>
+                <a class="tab-item" href="#">
+                    <span class="icon icon-me"></span>
+                    <span class="tab-label">Account</span>
+                </a>
+            </nav>
+            <!-- ./Tab bar -->
+
+            <!-- Content -->
+            <div class="content">
+                <!-- Avatar -->
+                <div class="list-block media-list inset" style="margin:0;">
+                    <ul>
+                        <li>
+                            <a href="#" class="item-link item-content">
+                                <div class="item-media"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" style='width: 2.2rem;border-radius:50%;'></div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">Zhenxin Zhang</div>
+                                    </div>
+                                    <div class="item-subtitle">user@email.10cents.cc</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ./Avatar -->
+
+                <!-- Opera blocks -->
+                <div class="grid-demo">
+                    <div class="row no-gutter">
+                        <div class="col-50" style="height:100px;background:#E91E63;"><span style="display:inline-block;margin-top:40px;width:100%;text-align:center;white-space: nowrap;color:#fff;">Purchase History</span></div>
+                        <div class="col-50" style="height:100px;background:#FFC107;"><span style="display:inline-block;margin-top:40px;width:100%;text-align:center;white-space: nowrap;color:#fff;">Winning Record</span></div>
+                    </div>
+                </div>
+                <!-- ./Opera blocks -->
+
+                <!-- Other info -->
+                <div class="content-block-title">Other Info</div>
+                <div class="list-block">
+                    <ul>
+                        <li class="item-content item-link">
+                            <div class="item-media"><i class="icon icon-f7"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title">Clear Cache</div>
+                                <div class="item-after">21M</div>
+                            </div>
+                        </li>
+
+                        <li class="item-content item-link">
+                            <div class="item-media"><i class="icon icon-f7"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title">Address Mangement</div>
+                                <div class="item-after"></div>
+                            </div>
+                        </li>
+
+                        <li class="item-content item-link">
+                            <div class="item-media"><i class="icon icon-f7"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title">Version</div>
+                                <div class="item-after">v1.1</div>
+                            </div>
+                        </li>
+
+                        <li class="item-content item-link">
+                            <div class="item-media"><i class="icon icon-f7"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title">Exit Account</div>
+                                <div class="item-after"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ./Other info -->
+
+            </div>
+            <!-- ./Content -->
+
+        </div><!-- ./page -->
+    </div><!-- ./page group -->
+
+    <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type='text/javascript'>
+    $(function(){
+      $(".swiper-container").swiper({
+        "speed":400,
+        "spaceBetween":0
+      });
+      $(".link").click(function(){
+        $.toast("Add to List Success");
+      });
+    });
+    </script>
+</body>
+</html>
